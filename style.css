@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Electrolize&family=Poppins:wght@100;200;300;400;500;600&display=swap");
+:root {
+  --maincolor: #fafafa;
+  --white: #fff;
+  --circle-1: #887a9c;
+  --circle-2: #4f93a6;
+  --text-1: rgba(0, 0, 0, 0.705);
+  --text-2: #a0d1df;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+/* header başlangıç */
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo-circle {
+  display: flex;
+  flex-direction: column;
+  margin-right: 5px;
+}
+
+/* logodaki yuvarlak */
+
+.circle {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+}
+
+.circle-1 {
+  background-color: var(--circle-1);
+  margin-left: 10px;
+}
+.circle-2 {
+  background-color: var(--circle-2);
+}
+
+/* HAKKINDA ALANI BAŞLANGIÇ */
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  overflow: hidden;
+  margin: 60px 0;
+  
+}
+.about-picture {
+  display: flex;
+  align-items: center;
+}
+.about-picture img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  max-width: 100%;
+  max-height: 100px;
+  padding: 5px;
+  transition: 0.3s;
+}
+.about-picture img:hover {
+  transform: translateY(-5px);
+}
+.col-1 {
+  margin-left: -15px;
+}
+.col-2,
+.col-5 {
+  margin-bottom: 90px;
+}
+.about-info {
+  margin: 0 50px;
+}
+.about-info h1,
+p {
+  text-align: center;
+}
+.about-info h1 {
+  font-weight: 900;
+  font-size: 50px;
+  letter-spacing: 0.8px;
+}
+.about-info p {
+  font-size: 20px;
+  color: var(--text-1);
+}
+.about-info a {
+  text-decoration: none;
+  padding: 15px 30px;
+  border-radius: 30px;
+  display: inline-block;
+  color: var(--white);
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.btn-1 {
+  background-color: var(--text-2);
+  margin-bottom: 10px;
+}
+.btn-1 span {
+  background-color: transparent;
+}
+.btn-2 {
+  background-color: var(--circle-1);
+}
+
+/* HAKKINDA ALANI BİTİŞ */
+
+/* GEÇİŞ ÇİZGİSİ BAŞLANGIÇ */
+
+.line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 40px 0;
+}
+.way {
+  height: 40px;
+  border: 1px solid black;
+}
+.line-circle {
+  width: 30px;
+  border: 1px solid black;
+  text-align: center;
+  border-radius: 50%;
+}
+/* GEÇİŞ ÇİZGİSİ BAŞLANGIÇ */
+/* içerik alanı BAŞLANGIÇ */
+.container {
+  max-width: 1200px;
+  margin: 0 50px;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.content img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  max-width: 150px;
+  max-height: 150px;
+  margin: 10px 5px;
+  border-radius: 5px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.info h3 {
+  font-size: 13px;
+  font-weight: bold;
+  color: var(--circle-2);
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-image: linear-gradient(to right, transparent, rgba(0,255,0,.8)),
+                url('assets/pexels-айдана-тастамбек-15085918.jpg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  height:400px ;
+}
+
+footer h4 , p{
+  color: white;
+  background-color: transparent;
+  opacity: 0.5;
+
+}
+footer h4{
+  opacity: 0.8;
+  margin: 10px 20px;
+  letter-spacing: 1px;
+
+}
+footer p{
+  font-size: 15px;
+}
+/* içerik alanı bitiş */
