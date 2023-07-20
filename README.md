@@ -1,2 +1,1 @@
-# ResponsiveTasarim
-# responsive
+# Responsive-landing-page
